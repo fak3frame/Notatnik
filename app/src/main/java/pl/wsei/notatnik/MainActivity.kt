@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val dbHelper = DataBaseHelper(applicationContext)
-        val db = dbHelper.readableDatabase
+        val db = dbHelper.writableDatabase
     }
 }
